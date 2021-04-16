@@ -1,8 +1,8 @@
 <?php
 // INSERT INTO `notes` (`sno`, `title`, `description`, `tstamp`) VALUES (NULL, 'buy books', 'buy the book which got number one place in the bookfair', current_timestamp());
 $insert = false;
-$update =false;
-$delete =false;
+$update = false;
+$delete = false;
 const br = "<br>";
 //connect to the database
 
@@ -24,9 +24,9 @@ if (!$conn) {
 // echo $_GET['update'];
 // exit();
 
-if (isset($_GET['delete'])){
+if (isset($_GET['delete'])) {
     $sno = $_GET['delete'];
-    $delete=true;
+    $delete = true;
     $sql = "DELETE FROM `notes` WHERE `sno` = $sno";
     $result = mysqli_query($conn, $sql);
 }
@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         $result = mysqli_query($conn, $sql);
         if ($result) {
-            $update=true;
+            $update = true;
         } else {
             "we failed to update";
         }
@@ -88,6 +88,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <link rel="stylesheet" href="//cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="//cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <link href="index.css" type="text/css" rel="stylesheet">
 
 
     <title>NOTEme -Easy And Reliable Note</title>
@@ -111,8 +112,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <h5 class="modal-title" id="editModalLabel">Edit Note</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                    <form action="/CRUD%20Operations/" method="post">
-                <div class="modal-body">
+                <form action="/CRUD%20Operations/" method="post">
+                    <div class="modal-body">
                         <input type="hidden" name="snoEdit" id="snoEdit">
                         <div class="mb-3">
                             <label for="title" class="form-label">Note Title</label>
@@ -124,21 +125,21 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                             <textarea class="form-control" id="descriptionEdit" name="descriptionEdit" rows="3"></textarea>
                         </div>
 
-                       
 
-                </div>
-                <div class="modal-footer d-block mr-auto">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Save changes</button>
-                </div>
-                    </form>
+
+                    </div>
+                    <div class="modal-footer d-block mr-auto">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-info">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><i class="fab fa-intercom"></i> NOTEme</a>
+            <a class="navbar-brand" href="#"><i class="fas fa-box-tissue"></i> NOTEme</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
