@@ -1,19 +1,19 @@
 h2 {
     color: #ffffff;
-    text-shadow: 2px 6px 3px #9e9e9e;
-    font-weight: 900;
+    text-shadow: 2px 9px 19px #002425;
+    font-weight: 100;
     font-size: 40px;
     text-align: center;
-    letter-spacing: 1px;
-    background: #ff5722;
+    letter-spacing: 2px;
+    background: #ff57227a;
     padding: 3px 0px 11px;
     border-radius: 10px;
     width: 759px;
     height: auto;
     margin: auto;
+    
 }
-
-body{background-image: url(img/uwp895279.jpeg);
+body{background-image: url(img/uwp888612.jpeg) !important;
      background-position: center;
     background-repeat: no-repeat;
      background-attachment: fixed;
@@ -21,13 +21,13 @@ body{background-image: url(img/uwp895279.jpeg);
     }
 
 .alert-success {
-    color: #000000;
+    color: #ffffff;
     border: none;
     font-size: 19px;
-    text-shadow: 2px 2px 3px darkturquoise;
+    text-shadow: 2px 2px 10px black;
     font-weight: 700;
     letter-spacing: 2px;
-    background:none;
+    background: none;
 }
 i.fab.fa-intercom {
     color: #ffeb3bed;
@@ -44,7 +44,8 @@ a.navbar-brand {
     border-radius: 7px;
 }
 
-.navbar{background-color:#009688 !important}
+.navbar{background-color: #ff589c !important;
+        padding:10px}
 
 .navbar .navbar-nav li a {
     color: #fff !important;
@@ -72,6 +73,9 @@ ul.dropdown-menu.show {
 45deg
 , #e46e6e, transparent 100px);
 }
+button.btn.btn-primary.an {
+    font-size: 20px;
+}
 
 .form-control {
     display: block;
@@ -92,12 +96,23 @@ ul.dropdown-menu.show {
     letter-spacing: 2px;
     border-radius: 10px;
 }
+thead {
+    font-size: 20px;
+}
+
 table#myTable {
-    background-color: #ffc3c3;
+    background-color: #ff11117a;
+    color: white;
+    letter-spacing: 2px;
 }
 
 tbody tr {
-    background-color: #c0f5f0 !important;
+    background-color: #a2985ab0 !important;
+    font-family: cursive;
+}
+tbody {
+    font-size: 17px;
+   
 }
 
 .btn-primary {
@@ -123,15 +138,66 @@ tbody tr {
     cursor: pointer;
     color: white;
     padding: 4px 7px;
-    font-size: 15px;
+    font-size: 17px;
     letter-spacing: 2px;
     font-weight: 400;
 }
 
 .dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate {
-    color: #000608;
+    color: #ffffff;
     letter-spacing: 2px;
-    margin-bottom: 20px;
+    margin: 20px;
     font-weight: 700;
     text-shadow: 1px 2px 6px darkturquoise;
+    font-size: 20px;
+}
+.dataTables_wrapper .dataTables_filter input {
+    border: 1px solid #fff;
+    border-radius: 11px;
+    padding: 5px;
+    background-color: transparent;
+    margin-left: 3px;
+}
+
+label.form-label {
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-family: auto;
+    font-weight: bolder;
+    text-shadow: 3px 5px 20px #000000;
+}
+div#myTable_wrapper {
+    box-shadow: 4px 10px 20px 13px #ffe1d0;
+    border-radius: 25px;
+}
+.btn-primary {
+
+    background: linear-gradient(
+45deg
+, #a91111, transparent);
+    border: none;
+}
+form {
+    box-shadow: 0px 7px 15px 4px #8b6060;
+    BORDER-RADIUS: 24PX;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #ffffffba;
+    background-clip: padding-box;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    letter-spacing: 2px;
+    border-radius: 10px;
 }

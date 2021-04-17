@@ -213,7 +213,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     <div class="container my-5">
         <h2>Drop Your Note On NOTEme</h2>
-        <form action="/CRUD%20Operations/index.php" method="post">
+        <form action="/CRUD%20Operations/index.php" class="my-5 text-center text-white p-4" method="post">
             <div class="mb-3">
                 <label for="title" class="form-label">Note Title</label>
                 <input type="text" class="form-control" id="title" name="title" aria-describedby="emailHelp">
@@ -224,11 +224,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <textarea class="form-control" id="description" name="description" rows="3"></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary">Add Note</button>
+            <button type="submit" class="btn btn-primary an">Add Note</button>
         </form>
     </div>
 
-    <div class="container">
+    <div class="container p-4">
 
         <table class="table" id="myTable">
             <thead>
